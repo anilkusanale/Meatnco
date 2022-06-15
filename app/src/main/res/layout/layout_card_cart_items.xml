@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/cart_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:maxLines="2"
+            android:text="@string/product_title"
+            android:textColor="@color/textColorSecondaryDark"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cart_item_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="5dp"
+            android:maxLines="1"
+            android:text="@string/category"
+            android:textColor="@color/textColorSecondaryLight"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/cart_item_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="5dp"
+            android:maxLines="1"
+            android:text="@string/category"
+            android:textColor="@color/textColorSecondaryLight"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/dividerLight" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/cart_item_cover"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:layout_margin="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/placeholder" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/product_price"
+                    android:textColor="@color/textColorSecondaryDark"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/cart_item_base_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="₹00.0"
+                    android:textColor="@color/textColorSecondaryDark"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/cart_item_attributes_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quantity"
+                    android:textColor="@color/textColorSecondaryDark"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="center_vertical"
+                    android:layoutDirection="ltr"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/cart_item_quantity_minusBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_corners_button_green"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_chevron_left"
+                        android:tint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/cart_item_quantity"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="@color/textColorSecondaryDark"
+                        android:textSize="15sp" />
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/cart_item_quantity_plusBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_corners_button_green"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_chevron_right"
+                        android:tint="@color/white" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total_price"
+                    android:textColor="@color/textColorSecondaryDark"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/cart_item_sub_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="₹00.0"
+                    android:textColor="@color/colorAccentGreen"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/dividerLight" />
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/ll_start_end_date"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:paddingStart="@dimen/dimen_10dp"-->
+<!--        android:paddingEnd="@dimen/dimen_10dp">-->
+
+<!--        <Button-->
+<!--            android:id="@+id/btn_from_date"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="35dp"-->
+<!--            android:layout_marginEnd="6dp"-->
+<!--            android:layout_weight="0.8"-->
+<!--            android:background="@drawable/rounded_corners_edittext_dark"-->
+<!--            android:text="Start Date"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:textColor="@color/textColorSecondary"-->
+<!--            android:textSize="12sp" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text=" to " />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/btn_to_date"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="35dp"-->
+<!--            android:layout_marginStart="6dp"-->
+<!--            android:layout_weight="0.8"-->
+<!--            android:background="@drawable/rounded_corners_edittext_dark"-->
+<!--            android:text="End Date"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:textColor="@color/textColorSecondary"-->
+<!--            android:textSize="12sp" />-->
+
+<!--    </LinearLayout>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_no_days"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:paddingStart="@dimen/_11sdp"-->
+<!--        android:paddingEnd="@dimen/_11sdp"-->
+<!--        android:textAlignment="textEnd"-->
+<!--        tools:text="8 days" />-->
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/subscriptionPlanRL"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="@dimen/dimen_35dp"-->
+<!--        android:layout_marginHorizontal="@dimen/_5sdp"-->
+<!--        android:layout_marginTop="@dimen/margin_10"-->
+<!--        android:background="@drawable/background">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/subscription_text"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="@dimen/dimen_35dp"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:paddingStart="@dimen/dimen_10dp"-->
+<!--            android:text="Choose Subscription Plan"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="@dimen/dimen_14sp" />-->
+<!--        &lt;!&ndash;<Spinner-->
+<!--            android:id="@+id/ageSpinner"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="@dimen/dimen_35dp"-->
+<!--            android:visibility="visible"-->
+<!--            android:background="@android:color/transparent" />&ndash;&gt;-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="@dimen/dimen_20dp"-->
+<!--            android:layout_height="@dimen/dimen_20dp"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:padding="@dimen/dimen_5dp"-->
+<!--            android:src="@drawable/down_arrow" />-->
+
+<!--    </RelativeLayout>-->
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginHorizontal="@dimen/_5sdp"-->
+<!--        android:layout_marginTop="@dimen/dimen_10dp"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:weightSum="2">-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/postcodeET"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="@dimen/dimen_35dp"-->
+<!--            android:layout_marginTop="@dimen/input_field_margin"-->
+<!--            android:layout_weight="1.2"-->
+<!--            android:background="@drawable/rounded_corners_edittext_dark"-->
+<!--            android:drawablePadding="10dp"-->
+<!--            android:gravity="start|center_vertical"-->
+<!--            android:hint="@string/post_code"-->
+<!--            android:inputType="number"-->
+<!--            android:paddingStart="10dp"-->
+<!--            android:paddingEnd="10dp"-->
+<!--            android:textAlignment="viewStart"-->
+<!--            android:textColor="@color/textColorSecondary"-->
+<!--            android:textColorHint="@color/textColorPrimaryDark"-->
+<!--            android:textSize="14sp" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/checkAvailabilityBT"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="35dp"-->
+<!--            android:layout_marginStart="@dimen/dimen_5dp"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:layout_weight="0.8"-->
+<!--            android:background="@drawable/subscription_drawable1"-->
+<!--            android:text="Check Availability"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="12sp" />-->
+
+<!--    </LinearLayout>-->
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_5dp"
+        android:text="Some Products will not available here."
+        android:textColor="@color/red"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:gravity="center_vertical|start"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/cart_item_viewBtn"
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:background="@drawable/rounded_corners_button_gray"
+            android:text="@string/view"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/cart_item_removeBtn"
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_delete_forever"
+            android:text="@string/remove"
+            android:textAlignment="center"
+            android:tint="@color/white" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

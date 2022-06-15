@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="remove_ads">Noņemt reklāmas</string>
+    <string name="msg_click_yes_to_remove_ads">Noklikšķiniet uz Jā, lai noņemtu reklāmas!</string>
+    <string name="btn_skip">Skip</string>
+    <string name="btn_yes">jā</string>
+
+</resources>

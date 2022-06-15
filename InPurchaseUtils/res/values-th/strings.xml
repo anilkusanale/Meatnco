@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="remove_ads">เอาโฆษณา</string>
+    <string name="msg_click_yes_to_remove_ads">คลิกใช่เพื่อลบโฆษณา</string>
+    <string name="btn_skip">ข้าม</string>
+    <string name="btn_yes">ใช่</string>
+
+</resources>

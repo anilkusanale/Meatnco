@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="1dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@color/layoutBackground" >
+
+        <TextView
+            android:id="@+id/my_account"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="My Account"
+            android:textSize="16sp"
+            android:textColor="@color/textColorSecondary"
+            android:padding="10dp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:drawableTint="@color/textColorSecondary"
+            android:background="@color/white"
+            android:drawableEnd="@drawable/ic_chevron_right" />
+
+        <TextView
+            android:id="@+id/myAddressesTV"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="My Addresses"
+            android:textSize="16sp"
+            android:textColor="@color/textColorSecondary"
+            android:padding="10dp"
+            android:clickable="true"
+            android:layout_marginTop="1dp"
+            android:gravity="center_vertical"
+            android:drawableTint="@color/textColorSecondary"
+            android:background="@color/white"
+            android:drawableEnd="@drawable/ic_chevron_right" />
+
+        <TextView
+            android:id="@+id/mySubscriptionsTV"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="My Subscriptions"
+            android:textSize="16sp"
+            android:textColor="@color/textColorSecondary"
+            android:padding="10dp"
+            android:clickable="true"
+            android:layout_marginTop="1dp"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:drawableTint="@color/textColorSecondary"
+            android:drawableEnd="@drawable/ic_chevron_right" />
+
+        <TextView
+            android:id="@+id/myFavouritesTV"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="My Favourites"
+            android:textSize="16sp"
+            android:textColor="@color/textColorSecondary"
+            android:padding="10dp"
+            android:clickable="true"
+            android:layout_marginTop="1dp"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:drawableTint="@color/textColorSecondary"
+            android:drawableEnd="@drawable/ic_chevron_right" />
+
+        <TextView
+            android:id="@+id/introTV"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:drawableEnd="@drawable/ic_chevron_right"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="Intro"
+            android:textAllCaps="false"
+            android:drawableTint="@color/textColorSecondary"
+            android:textColor="@color/textColorSecondary"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/newzTV"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="News"
+            android:textSize="16sp"
+            android:textColor="@color/textColorSecondary"
+            android:padding="10dp"
+            android:clickable="true"
+            android:layout_marginTop="1dp"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:drawableTint="@color/textColorSecondary"
+            android:drawableEnd="@drawable/ic_chevron_right" />
+
+        <TextView
+            android:id="@+id/contactUsTV"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Contact Us"
+            android:textSize="16sp"
+            android:textColor="@color/textColorSecondary"
+            android:padding="10dp"
+            android:clickable="true"
+            android:layout_marginTop="1dp"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:drawableTint="@color/textColorSecondary"
+            android:drawableEnd="@drawable/ic_chevron_right" />
+
+        <TextView
+            android:id="@+id/aboutUsTV"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="About Us"
+            android:textSize="16sp"
+            android:textColor="@color/textColorSecondary"
+            android:padding="10dp"
+            android:clickable="true"
+            android:layout_marginTop="1dp"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:drawableTint="@color/textColorSecondary"
+            android:drawableEnd="@drawable/ic_chevron_right" />
+
+        <TextView
+            android:id="@+id/shareAppTV"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Share App"
+            android:textSize="16sp"
+            android:textColor="@color/textColorSecondary"
+            android:padding="10dp"
+            android:clickable="true"
+            android:layout_marginTop="1dp"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:drawableTint="@color/textColorSecondary"
+            android:drawableEnd="@drawable/ic_chevron_right" />
+
+        <TextView
+            android:id="@+id/rateAppTV"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Rate App"
+            android:textSize="16sp"
+            android:textColor="@color/textColorSecondary"
+            android:padding="10dp"
+            android:clickable="true"
+            android:layout_marginTop="1dp"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:drawableTint="@color/textColorSecondary"
+            android:drawableEnd="@drawable/ic_chevron_right" />
+
+        <TextView
+            android:id="@+id/settingsTV"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Settings"
+            android:textSize="16sp"
+            android:textColor="@color/textColorSecondary"
+            android:padding="10dp"
+            android:clickable="true"
+            android:layout_marginTop="1dp"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:drawableTint="@color/textColorSecondary"
+            android:drawableEnd="@drawable/ic_chevron_right" />
+
+        <TextView
+            android:id="@+id/logoutTV"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Logout"
+            android:textSize="16sp"
+            android:textColor="@color/textColorSecondary"
+            android:padding="10dp"
+            android:clickable="true"
+            android:layout_marginTop="1dp"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:drawableTint="@color/textColorSecondary"
+            android:drawableEnd="@drawable/ic_chevron_right" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="remove_ads">Eliminar anuncios</string>
+    <string name="msg_click_yes_to_remove_ads">Haga clic en sí para eliminar anuncios!</string>
+    <string name="btn_skip">Skip</string>
+    <string name="btn_yes">Sí</string>
+
+</resources>

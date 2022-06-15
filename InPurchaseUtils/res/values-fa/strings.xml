@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="remove_ads">حذف تبلیغات</string>
+    <string name="msg_click_yes_to_remove_ads">بله برای حذف تبلیغات کلیک کنید!</string>
+    <string name="btn_skip">پرش</string>
+    <string name="btn_yes">بله</string>
+
+</resources>

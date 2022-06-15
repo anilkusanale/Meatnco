@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="remove_ads">Pašalinti skelbimai</string>
+    <string name="msg_click_yes_to_remove_ads">Spustelėkite taip, jei norite pašalinti skelbimai!</string>
+    <string name="btn_skip">Praleisti</string>
+    <string name="btn_yes">taip</string>
+
+</resources>

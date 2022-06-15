@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="remove_ads">広告を削除します。</string>
+    <string name="msg_click_yes_to_remove_ads">はいをクリックして広告を削除 ！</string>
+    <string name="btn_skip">スキップ</string>
+    <string name="btn_yes">はい</string>
+
+</resources>

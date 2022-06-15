@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="remove_ads">Ta bort annonser</string>
+    <string name="msg_click_yes_to_remove_ads">Klicka på Ja för att ta bort annonser!</string>
+    <string name="btn_skip">SKIP</string>
+    <string name="btn_yes">Ja</string>
+
+</resources>

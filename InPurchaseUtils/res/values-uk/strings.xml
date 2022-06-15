@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="remove_ads">Видаляти оголошення</string>
+    <string name="msg_click_yes_to_remove_ads">Натисніть так для видалення оголошень!</string>
+    <string name="btn_skip">Пропустити</string>
+    <string name="btn_yes">Так</string>
+
+</resources>

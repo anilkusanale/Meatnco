@@ -1,0 +1,27 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.toxsl.purchaseutils"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+   <!-- <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="22" />-->
+
+    <!-- Required permission to use in-app billing. -->
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <application
+        android:allowBackup="true"
+      >
+        <service android:name="BillingService" />
+
+        <receiver android:name="BillingReceiver" >
+            <intent-filter>
+                <action android:name="com.android.vending.billing.IN_APP_NOTIFY" />
+                <action android:name="com.android.vending.billing.RESPONSE_CODE" />
+                <action android:name="com.android.vending.billing.PURCHASE_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

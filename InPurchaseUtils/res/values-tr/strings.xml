@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="remove_ads">Reklamları kaldırmak</string>
+    <string name="msg_click_yes_to_remove_ads">Reklamları kaldırmak için Evet\'i tıklatın.</string>
+    <string name="btn_skip">Atla</string>
+    <string name="btn_yes">Evet</string>
+
+</resources>

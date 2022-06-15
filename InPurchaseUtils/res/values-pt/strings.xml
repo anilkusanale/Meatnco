@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="remove_ads">Remover anúncios</string>
+    <string name="msg_click_yes_to_remove_ads">Clique em Sim para remover anúncios!</string>
+    <string name="btn_skip">Skip</string>
+    <string name="btn_yes">Sim</string>
+
+</resources>

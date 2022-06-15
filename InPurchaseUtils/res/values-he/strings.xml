@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="remove_ads">להסיר מודעות</string>
+    <string name="msg_click_yes_to_remove_ads">לחץ על כן כדי להסיר את המודעות!</string>
+    <string name="btn_skip">דלג</string>
+    <string name="btn_yes">כן</string>
+
+</resources>

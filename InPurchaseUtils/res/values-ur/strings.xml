@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="remove_ads">اشتھارات کو خارج</string>
+    <string name="msg_click_yes_to_remove_ads">اشتھارات کو خارج کرنے کے لیے ہاں پر کلک کریں!</string>
+    <string name="btn_skip">اچٹیں</string>
+    <string name="btn_yes">جی ہاں</string>
+
+</resources>

@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="remove_ads">Menghapus iklan</string>
+    <string name="msg_click_yes_to_remove_ads">Klik Ya untuk menghapus iklan!</string>
+    <string name="btn_skip">Skip</string>
+    <string name="btn_yes">Ya</string>
+
+</resources>

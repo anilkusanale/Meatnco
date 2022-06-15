@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="remove_ads">Remove Ads</string>
+    <string name="msg_click_yes_to_remove_ads">Click yes to remove Ads!</string>
+    <string name="btn_skip">Skip</string>
+    <string name="btn_yes">Yes</string>
+    <string name="images" translatable="false">images</string>
+
+</resources>

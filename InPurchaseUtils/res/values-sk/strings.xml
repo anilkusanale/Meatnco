@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="remove_ads">Odstránenie reklamy</string>
+    <string name="msg_click_yes_to_remove_ads">Kliknite na tlačidlo Áno, ak chcete odstrániť reklamy!</string>
+    <string name="btn_skip">Preskočiť</string>
+    <string name="btn_yes">áno</string>
+
+</resources>

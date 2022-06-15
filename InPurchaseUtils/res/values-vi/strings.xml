@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="remove_ads">Loại bỏ quảng cáo</string>
+    <string name="msg_click_yes_to_remove_ads">Bấm có để loại bỏ quảng cáo!</string>
+    <string name="btn_skip">Bỏ qua</string>
+    <string name="btn_yes">Có</string>
+
+</resources>

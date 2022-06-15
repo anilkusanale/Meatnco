@@ -1,0 +1,44 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scroll_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/categories_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Shop by categories"
+            android:textSize="18dp"
+            android:padding="@dimen/dimen_15dp"
+            android:background="@color/pista_green"
+            android:textColor="@color/colorWhite"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/categories_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal"
+            android:paddingHorizontal="@dimen/_5sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_below="@+id/categories_header"/>
+
+        <TextView
+            android:id="@+id/empty_record_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/record_not_found"
+            android:layout_marginTop="100dp"
+            android:textColor="@color/textColorPrimaryLight"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

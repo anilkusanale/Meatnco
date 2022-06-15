@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <EditText
+            android:id="@+id/reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_rect_grey_border"
+            android:hint="Reason"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_15sdp" />
+
+        <EditText
+            android:id="@+id/fromDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/round_rect_grey_border"
+            android:focusable="false"
+            android:hint="Pause From Date"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_15sdp" />
+
+        <EditText
+            android:id="@+id/toDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/round_rect_grey_border"
+            android:focusable="false"
+            android:hint="Pause To Date"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_15sdp" />
+
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@color/pista_green"
+            android:padding="@dimen/_5sdp"
+            android:text="Submit" />
+
+    </LinearLayout>
+
+</RelativeLayout>

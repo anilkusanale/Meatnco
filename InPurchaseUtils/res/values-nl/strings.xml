@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="remove_ads">Verwijder advertenties</string>
+    <string name="msg_click_yes_to_remove_ads">Klik op Ja om het verwijderen van advertenties!</string>
+    <string name="btn_skip">Overslaan</string>
+    <string name="btn_yes">Ja</string>
+
+</resources>

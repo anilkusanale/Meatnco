@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="remove_ads">Премахване на реклами</string>
+    <string name="msg_click_yes_to_remove_ads">Щракнете върху да, за да премахнете реклами!</string>
+    <string name="btn_skip">Skip</string>
+    <string name="btn_yes">Да</string>
+
+</resources>

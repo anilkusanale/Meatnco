@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="remove_ads">Απομακρύνω διαφημίσεις</string>
+    <string name="msg_click_yes_to_remove_ads">Κάντε κλικ στο κουμπί Ναι για να αφαιρέσετε τις διαφημίσεις!</string>
+    <string name="btn_skip">Παράλειψη</string>
+    <string name="btn_yes">Ναι</string>
+
+</resources>

@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="remove_ads">Tregui anuncis</string>
+    <string name="msg_click_yes_to_remove_ads">Faci clic Sí per treure anuncis!</string>
+    <string name="btn_skip">Omet</string>
+    <string name="btn_yes">Sí</string>
+
+</resources>

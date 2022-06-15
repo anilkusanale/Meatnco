@@ -1,0 +1,333 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:attrs="http://schemas.android.com/tools"
+    android:id="@+id/homepage"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/progress_bar_home"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/_10sdp"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+      <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:elevation="2dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/toolbar_logo2"
+                android:padding="@dimen/_6sdp"/>
+
+
+
+          <EditText
+              android:id="@+id/etSearchZipcode"
+              android:layout_width="@dimen/_100sdp"
+              android:layout_height="wrap_content"
+              android:layout_alignParentRight="true"
+              android:layout_marginTop="@dimen/_5sdp"
+              android:layout_marginRight="@dimen/_50sdp"
+              android:background="@drawable/pincode"
+              android:drawableLeft="@drawable/ic_location"
+              android:drawablePadding="@dimen/_6sdp"
+              android:drawableTint="@color/pista_green"
+              android:hint="Enter Zipcode"
+              android:imeOptions="actionDone"
+              android:inputType="text"
+              android:paddingVertical="@dimen/_7sdp"
+              android:paddingLeft="@dimen/_6sdp"
+              android:paddingRight="@dimen/_10sdp"
+              android:textColor="@color/black"
+              android:textColorHint="@color/grey_500"
+              android:textSize="@dimen/_10sdp"
+              android:tint="@color/black" />
+
+          <RelativeLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+              <ImageView
+                  android:id="@+id/cart_home"
+                  android:layout_width="@dimen/_20sdp"
+                  android:layout_height="match_parent"
+                  android:src="@drawable/ic_cart_full"
+                  android:layout_centerVertical="true"
+                  android:layout_alignParentEnd="true"
+                  app:tint="@color/meatnco"
+                  android:padding="@dimen/_1sdp"
+                  android:layout_marginRight="@dimen/_11sdp"/>
+
+
+              <ru.nikartm.support.ImageBadgeView
+                  android:id="@+id/imageBadgeView"
+                  android:layout_width="@dimen/_16sdp"
+                  android:layout_height="@dimen/_16sdp"
+                  app:ibv_badgeValue="1"
+                  app:ibv_badgeTextSize="11sp"
+                  app:ibv_fixedBadgeRadius="@dimen/_8sdp"
+                  app:ibv_badgeTextColor="#ffffff"
+                  app:ibv_badgeColor="@color/black"
+                  app:ibv_badgeLimitValue="false"
+                  android:layout_alignTop="@+id/cart_home"
+                  android:layout_alignParentEnd="true"
+                  android:layout_margin="@dimen/_7sdp" />
+          </RelativeLayout>
+
+      </RelativeLayout>
+
+      <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            app:layout_scrollFlags="scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="@color/pista_green"
+                    android:orientation="horizontal"
+                    android:paddingRight="@dimen/dimen_5dp"
+                    android:layout_height="@dimen/dimen_60dp">
+
+                    <EditText
+                        android:id="@+id/searchProductET"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_45dp"
+                        android:inputType="number"
+                        android:imeOptions="actionDone"
+                        android:layout_gravity="center_vertical"
+                        android:drawableLeft="@drawable/ic_search"
+                        android:padding="@dimen/dimen_8dp"
+                        android:focusable="false"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="@dimen/margin_10"
+                        android:textColorHint="@color/grey_500"
+                        android:textSize="@dimen/dimen_15dp"
+                        android:hint="Search products by name"
+                        android:background="@drawable/pincode"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <FrameLayout
+                        android:id="@+id/bannerFrameHome1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <com.facebook.shimmer.ShimmerFrameLayout
+                        android:id="@+id/shimmerFrame"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:alpha=".8"
+                        android:visibility="gone"
+                        app:shimmer_duration="900">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/placeholder" />
+                    </com.facebook.shimmer.ShimmerFrameLayout>
+
+                </RelativeLayout>
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="@dimen/dimen_2dp"/>
+
+                <com.rd.PageIndicatorView
+                    android:id="@+id/pageIndicatorView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:piv_animationType="thinWorm"
+                    android:layout_marginBottom="@dimen/dimen_8dp"
+                    app:piv_dynamicCount="true"
+                    app:piv_interactiveAnimation="true"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginTop="@dimen/margin_10"
+                    app:piv_selectedColor="@color/pista_green"
+                    app:piv_unselectedColor="@color/white"
+                    app:piv_viewPager="@id/viewpager"
+                    attrs:piv_padding="12dp"
+                    attrs:piv_radius="6dp" />
+
+                </FrameLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="1dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:src="@drawable/add_banner"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/pista_green"
+                    android:padding="@dimen/dimen_8dp"
+                    android:textSize="20dp"
+                    android:text="Shop By Category"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/categoriesRV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:scrollbars="horizontal"
+                    android:paddingHorizontal="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:background="@color/pista_green"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:padding="@dimen/dimen_10dp"
+                    android:textSize="18dp"
+                    android:text="Special Offers"/>
+
+                <ImageView
+                    android:id="@+id/hmofferbanner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_110sdp"
+                    android:src="@drawable/offerban"
+                    android:scaleType="fitStart"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/offers_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    app:spanCount="3"
+                    attrs:itemCount="6"
+                    attrs:listitem="@layout/item_offer_home"/>
+
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+  <!--  </com.google.android.material.appbar.AppBarLayout>-->
+
+   <!-- <com.google.android.material.tabs.TabLayout
+                       android:id="@+id/tabs"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       app:tabMode="fixed"
+                       app:tabIndicatorHeight="2dp"
+                       app:tabBackground="@color/white"
+                       android:background="@color/white"
+                       app:tabTextColor="@color/textColorSecondaryLight"
+                       app:tabIndicatorColor="@color/textColorSecondaryDark"
+                       app:tabSelectedTextColor="@color/textColorSecondaryDark"
+                       style="@style/MyCustomTabLayout" />
+
+                   <com.netset.aapkidukan.customs.CustomViewPager
+                       android:id="@+id/myViewPager"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:background="@color/windowBackground" />-->
+    <!--<FrameLayout
+        android:id="@+id/home1_products_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/windowBackground"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />-->
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<RelativeLayout-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="?attr/actionBarSize">-->
+
+<!--<ImageView-->
+<!--    android:layout_width="@dimen/_100sdp"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:src="@drawable/toolbar_logo"-->
+<!--    android:padding="@dimen/_5sdp"/>-->
+
+<!--<ImageView-->
+<!--    android:id="@+id/cart_home"-->
+<!--    android:layout_width="@dimen/_20sdp"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:src="@drawable/ic_cart_full"-->
+<!--    android:layout_centerVertical="true"-->
+<!--    android:layout_alignParentEnd="true"-->
+<!--    android:layout_marginRight="@dimen/_15sdp"/>-->
+
+<!--<ImageView-->
+<!--    android:id="@+id/ivSearchHome"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:src="@drawable/ic_location"-->
+<!--    android:layout_toLeftOf="@id/cart_home"-->
+<!--    android:layout_marginRight="@dimen/_20sdp"/>-->
+
+<!--</RelativeLayout>-->

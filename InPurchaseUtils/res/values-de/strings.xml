@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="remove_ads">Entfernen Sie anzeigen</string>
+    <string name="msg_click_yes_to_remove_ads">Klicken Sie auf Ja, um Werbung zu entfernen!</string>
+    <string name="btn_skip">Überspringen</string>
+    <string name="btn_yes">Ja</string>
+
+</resources>

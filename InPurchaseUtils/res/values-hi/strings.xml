@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="remove_ads">विज्ञापन निकालें</string>
+    <string name="msg_click_yes_to_remove_ads">विज्ञापनों को दूर करने के लिए हाँ क्लिक करें!</string>
+    <string name="btn_skip">छोड़ें</string>
+    <string name="btn_yes">हाँ</string>
+
+</resources>

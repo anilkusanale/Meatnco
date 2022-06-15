@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:padding="@dimen/_10sdp">
+
+    <TextView
+        android:id="@+id/heading_set_your_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set your location"
+        android:textAlignment="center"
+        android:textSize="@dimen/dimen_25sp"
+        android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:id="@+id/heading_feild"
+            android:layout_below="@id/heading_set_your_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:background="@drawable/bg_et_outline"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <EditText
+                android:id="@+id/et_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your location"
+                android:textColor="#222020"
+                android:backgroundTint="@android:color/transparent"/>
+
+        </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set my location"
+        android:layout_centerInParent="true"
+        android:background="@color/green"
+        android:layout_below="@id/heading_feild"
+        android:textColor="#fff"
+        android:textSize="@dimen/_12sdp"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"/>
+
+</RelativeLayout>

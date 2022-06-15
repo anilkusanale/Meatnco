@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "442799789945",
+    "project_id": "meatnco-98e01",
+    "storage_bucket": "meatnco-98e01.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:442799789945:android:ea3efcd39ec56c1b6341a8",
+        "android_client_info": {
+          "package_name": "in.meatnco.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "442799789945-3ir3plfr4h8h5d2c7sq5qcjsqs0erqd9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkx0lUfGldoRXveevJrJRSDnPqPyE9G58"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "442799789945-3ir3plfr4h8h5d2c7sq5qcjsqs0erqd9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

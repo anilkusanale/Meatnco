@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="remove_ads">Poista mainokset</string>
+    <string name="msg_click_yes_to_remove_ads">Valitse Kyllä poistaa mainoksia!</string>
+    <string name="btn_skip">Ohita</string>
+    <string name="btn_yes">Kyllä</string>
+
+</resources>

@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="remove_ads">광고를 제거</string>
+    <string name="msg_click_yes_to_remove_ads">광고를 제거 하려면 예를 클릭 하십시오!</string>
+    <string name="btn_skip">건너뛰기</string>
+    <string name="btn_yes">예</string>
+
+</resources>

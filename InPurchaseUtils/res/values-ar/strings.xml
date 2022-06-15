@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="remove_ads">إزالة الإعلانات</string>
+    <string name="msg_click_yes_to_remove_ads">انقر فوق نعم لإزالة الإعلانات!</string>
+    <string name="btn_skip">تخطي</string>
+    <string name="btn_yes">نعم</string>
+
+</resources>
